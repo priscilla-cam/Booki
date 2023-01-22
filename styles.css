@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  
+  nav {
+  margin-top: 26px;
+  font-family: raleway;
+  font-weight: 400;
+  }
+  
+  .test {
+    padding: 25px;
+  }
+  
+  .test:hover {
+    text-decoration: overline;
+    
+  }
+  
+  #logo {
+    width: 10%;
+    border-radius: 0;
+    object-fit: contain;
+  }
+  
+  a:hover {
+    color: blue;
+  }
+  
+  a {
+    text-decoration:none;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+  .essai {
+    display: flex;
+  }
+  
+  input {
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border-left: 0;
+  border-right: 0;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  padding: 15px;
+  }
+  
+  button {
+    background-color: #0065FC;
+  color: white;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  font-size: large;
+  font-weight: bold;
+  padding: 15px;
+  }
+  
+  .loca {
+    border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #F2F2F2;
+  font-size: large;
+  margin-left: 15px;
+  padding: 15px;
+  }
+  
