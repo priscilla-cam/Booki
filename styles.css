@@ -1,9 +1,9 @@
 body {
   font-family: sans-serif;
   max-width: 1400px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
   padding-bottom: 0;
   margin: auto;
 }
@@ -23,16 +23,18 @@ nav {
 }
 
 .en_tete {
-  padding: 25px;
+  padding: 35px;
+  width: 50%;
+  text-align: center;
 }
 
 .en_tete:hover {
   color: #0065FC;
-  border-top: 2px solid #0065FC;
+  border-top: 3px solid #0065FC;
 }
 
 #logo {
-  width: 10%;
+  width: 8%;
   border-radius: 0;
   object-fit: contain;
 }
@@ -95,6 +97,7 @@ p {
 
 .filtres {
   display: flex;
+  align-items: center;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
   margin: 20px;
@@ -123,6 +126,7 @@ h3 {
 
 .information {
   display: flex;
+  align-items: center;
   margin-left: 13px;
   margin-bottom: 40px;
   margin-top: 10px;
@@ -131,10 +135,10 @@ h3 {
 .icone_information {
   border: 1px solid #D9D9D9;
   border-radius: 75px;
-  padding-left: 9px;
-  padding-right: 9px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 15px;
   color: blue;
 }
@@ -225,14 +229,15 @@ p {
 .titre_icone_populaire {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 20px;
+  margin-left: 15px;
 }
 
 .icone_populaire {
   color: blue;
   margin-top: 28px;
-  padding-left: 50px;
+  margin-right: 15px;
 }
 
 .populaire {
@@ -260,25 +265,18 @@ p {
 
 .nom_hotel_etoiles {
   display: flex;
+  width: 60%;
   flex-direction: column;
   align-items: stretch;
   margin-left: 8px;
 
 }
 
-.etoiles_hautes {
-  color: blue;
-  margin-top: 40px;
-}
-
-.etoiles_milieu {
-  color: blue;
-  margin-top: 26px;
-}
-
-.etoiles_basses {
-  color: blue;
-  margin-top: 38px;
+.etoiles_populaire {
+  color: #0065FC;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
 }
 
 
@@ -300,6 +298,10 @@ p {
 
 }
 
+.element_activite a {
+  width: 100%;
+}
+
 .image_activite {
   width: 100%;
   height: 360px;
@@ -307,7 +309,7 @@ p {
 }
 
 .nom_activite {
-  padding-left: 10px;
+  padding: 7px;
 }
 
 /* CSS Footer */
@@ -343,13 +345,22 @@ ul {
 @media all and (min-width: 768px) and (max-width: 992px) {
 
   body {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
   }
 
   .loupe {
     display: none;
+  }
+
+  .en_tete {
+    padding: 25px;
+  }
+
+  .filtres {
+    font-size: 85%;
+    margin: 10px;
   }
 
   /*CSS Card Hebergement*/
@@ -370,7 +381,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
   }
 
   .carte_populaire {
@@ -383,68 +393,51 @@ ul {
 
   .image_populaire {
     width: 60%;
+    height: 160px;
   }
 
-  .etoiles_hautes {
-    color: blue;
-    margin-top: 9px;
-  }
-
-  .etoiles_milieu {
-    color: blue;
-    margin-top: 7px;
-  }
-
-  .etoiles_basses {
-    color: blue;
-    margin-top: 10px;
-  }
-
-  .titre_icone_populaire {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 20px;
-    padding-left: 20px;
-
-  }
-
-  .icone_populaire {
-    padding-left: 490px;
-  }
 
   /*CSS Actiites*/
 
   .image_activite {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 220px;
+    margin-bottom: 5px;
+  }
+
+  .element_activite {
+    width: 22%;
   }
 
 }
 
-
-
 @media all and (max-width: 768px) {
 
-  .rechercher {
-    display: none;
+
+  .en_tete {
+    border-bottom: 2px solid #F2F2F2;
+    padding: 25px;
   }
+
 
   .en_tete:hover {
     color: #0065FC;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 4px solid #0065FC;
     border-top: none;
+
   }
 
   body {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
   nav {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 
   header {
@@ -455,9 +448,9 @@ ul {
   }
 
   #logo {
-    width: 15%;
-    margin-bottom: 30px;
-    margin-left: 160px;
+    width: 25%;
+    margin: auto;
+
   }
 
   h1 {
@@ -472,10 +465,13 @@ ul {
 
   /*CSS recherche */
 
+  .rechercher {
+    display: none;
+  }
+
   .recherche {
     margin-top: 30px;
-    display: flex;
-    justify-content: space-around
+    margin-left: 15px;
   }
 
   .icone_localisation {
@@ -485,6 +481,7 @@ ul {
 
   input {
     padding: 10px;
+    font-size: 100%;
   }
 
   button {
@@ -523,7 +520,6 @@ ul {
 
   .titre_filtre {
     font-size: small;
-
   }
 
   .titre_filtres {
@@ -538,19 +534,23 @@ ul {
   /*CSS information */
 
   .information {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-left: 15px;
+
   }
 
   .icone_information {
-    margin-right: 4px;
-    padding-bottom: 0;
-
+    font-size: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   .nom_info {
-    font-size: medium;
+    font-size: 90%;
+    margin-top: 25px;
+    /*A revoir car quand on etire ca ne va plus*/
   }
 
 
@@ -567,21 +567,13 @@ ul {
 
   .icone_populaire {
     margin-top: 23px;
+
   }
 
   .carte_populaire {
     width: 100%;
     border-radius: 0;
 
-  }
-
-  .etoiles_hautes {
-    margin-top: 27px;
-  }
-
-  .etoiles_basses {
-    color: blue;
-    margin-top: 42px;
   }
 
   .carte_hebergement {
@@ -644,8 +636,9 @@ ul {
   }
 
   .titre_activites {
-    padding-left: 15px;
-    padding-right: 150px;
+    padding-left: 20px;
+    padding-right: 200px;
+    /*A voir pour eloigner le titre ne marche pas quand on etire*/
     margin-bottom: 5px;
   }
 
