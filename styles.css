@@ -23,7 +23,7 @@ nav {
 }
 
 .en_tete {
-  padding: 35px;
+  padding: 45px;
   width: 50%;
   text-align: center;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 #logo {
-  width: 8%;
+  width: 112px;
   border-radius: 0;
   object-fit: contain;
 }
@@ -162,7 +162,7 @@ h3 {
 }
 
 .titre_hebergement {
-  padding-left: 30px;
+  padding-left: 25px;
   padding-top: 20px;
   padding-bottom: 3px;
 }
@@ -176,17 +176,18 @@ img {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .detail_hotel {
   background-color: white;
   border-radius: 20px;
-  width: 25%;
+  width: 27%;
+  height: 190px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   padding: 5px;
-  margin: 10px;
+  margin-bottom: 20px;
   box-shadow: 1px 4px 6px rgba(21, 16, 16, 0.1);
 }
 
@@ -289,17 +290,14 @@ p {
 }
 
 .element_activite {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 21%;
-  align-items: center;
+  width: 22%;
+  align-items: flex-start;
   border-radius: 20px;
   box-shadow: 1px 4px 6px rgba(21, 16, 16, 0.1);
 
-}
-
-.element_activite a {
-  width: 100%;
 }
 
 .image_activite {
@@ -309,7 +307,9 @@ p {
 }
 
 .nom_activite {
-  padding: 7px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 12px;
 }
 
 /* CSS Footer */
@@ -327,22 +327,24 @@ footer {
 ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-.pied_de_page {
   font-family: raleway;
   font-weight: 400;
 }
 
+
 /*Media Queries*/
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   .loupe {
+    display: none;
+  }
+
+  br {
     display: none;
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
   body {
     padding-left: 30px;
@@ -350,12 +352,21 @@ ul {
     padding-top: 30px;
   }
 
+  br {
+    display: none;
+  }
+
   .loupe {
     display: none;
   }
 
+  input,
+  .rechercher {
+    font-size: medium;
+  }
+
   .en_tete {
-    padding: 25px;
+    padding: 35px;
   }
 
   .filtres {
@@ -409,28 +420,34 @@ ul {
     width: 22%;
   }
 
+  .nom_activite {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
 }
 
-@media all and (max-width: 768px) {
 
+@media all and (max-width: 767px) {
+
+  body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .en_tete {
     border-bottom: 2px solid #F2F2F2;
     padding: 25px;
   }
 
-
   .en_tete:hover {
     color: #0065FC;
     border-bottom: 4px solid #0065FC;
     border-top: none;
 
-  }
-
-  body {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 20px;
   }
 
   nav {
@@ -474,6 +491,11 @@ ul {
     margin-left: 15px;
   }
 
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
   .icone_localisation {
     margin-left: 0px;
     padding: 12px;
@@ -481,7 +503,7 @@ ul {
 
   input {
     padding: 10px;
-    font-size: 100%;
+    width: 60%;
   }
 
   button {
@@ -536,6 +558,7 @@ ul {
   .information {
     margin-bottom: 30px;
     margin-left: 15px;
+    align-items: flex-start;
 
   }
 
@@ -549,8 +572,6 @@ ul {
 
   .nom_info {
     font-size: 90%;
-    margin-top: 25px;
-    /*A revoir car quand on etire ca ne va plus*/
   }
 
 
@@ -637,14 +658,9 @@ ul {
 
   .titre_activites {
     padding-left: 20px;
-    padding-right: 200px;
-    /*A voir pour eloigner le titre ne marche pas quand on etire*/
     margin-bottom: 5px;
   }
 
-  .nom_activite {
-    padding: 10px;
-  }
 
   /*Footer*/
 
