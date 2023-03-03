@@ -177,7 +177,7 @@ img {
 .detail_hotel {
   background-color: white;
   border-radius: 20px;
-  width: 27%;
+  width: 29%;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -244,11 +244,14 @@ p {
 .hotel_populaire {
   background-color: white;
   border-radius: 20px;
-  display: flex;
-  align-items: stretch;
   padding: 5px;
   margin: 10px;
   box-shadow: 1px 4px 6px rgba(21, 16, 16, 0.1);
+}
+
+.hotel_populaire a {
+  display: flex;
+  align-items: stretch;
 }
 
 .image_populaire {
@@ -290,7 +293,10 @@ p {
   align-items: flex-start;
   border-radius: 20px;
   box-shadow: 1px 4px 6px rgba(21, 16, 16, 0.1);
+}
 
+.element_activite a {
+  width: 100%;
 }
 
 .image_activite {
@@ -587,6 +593,17 @@ ul {
     width: 100%;
     border-radius: 0;
 
+  }
+
+  .populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .hotel_populaire {
+    width: 90%;
   }
 
   .carte_hebergement {
