@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: raleway, sans-serif;
   max-width: 1400px;
   padding-left: 50px;
   padding-right: 50px;
@@ -15,11 +15,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 70px;
-}
-
-nav {
-  font-family: raleway;
-  font-weight: 400;
 }
 
 .en_tete {
@@ -183,7 +178,6 @@ img {
   background-color: white;
   border-radius: 20px;
   width: 27%;
-  height: 190px;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -343,7 +337,7 @@ ul {
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (max-width: 991px) {
 
   body {
     padding-left: 30px;
